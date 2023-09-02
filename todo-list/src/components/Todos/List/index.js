@@ -6,11 +6,7 @@ function List({ todos, setTodos }) {
 
   let todoCount = todos.length;
 
-  const allClick = () => {
-        const newTodos = todos.filter(todo => todo.id !== id);
-        setTodos(newTodos);
-        console.log(todos);
-  }
+
 
   return (
     <div>
@@ -27,7 +23,7 @@ function List({ todos, setTodos }) {
         ))
       }
       <div className='mt-2 ml-auto p-2 pb-0 text-white border-bottom border-radius'>
-        <h3 onClick={() => allClick()} >All:{todoCount}</h3>
+        <h3>All:{todoCount}</h3>
 
       </div>
     </div>
